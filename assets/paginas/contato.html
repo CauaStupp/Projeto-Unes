@@ -54,11 +54,13 @@
                 <form action="POST">
                     Email: <br>
                     <input type="email" id="email"> <br>
+                    <p class="error email"></p>
                     Assunto: <br>
                     <input type="text" id="assunto"> <br>
-                    Descrição: <br>
+                    <p class="error assunto"></p>
+                    Descrição: (opcional)<br>
                     <textarea id="desc" cols="30" rows="10"></textarea> <br>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="btnEnviar">
                 </form>
             </div>
         </section>

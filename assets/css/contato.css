@@ -10,9 +10,15 @@
 
 
 input:focus, textarea:focus {
-    border: none;
-    outline: 0;
     box-shadow: 0 0 0;
+    border: none;
+}
+
+.error {
+    color: tomato;
+    font-weight: bolder;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 
@@ -196,17 +202,36 @@ main {
     margin: auto;
 }
 
-.section-contato-form textarea {
-    width: 300px;
-    max-width: 300px;
-}
-
 .section-contato-form input[type="submit"] {
-    padding: 5px 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
 }
 
-.section-contato-form input[type="email"], .section-contato-form input[type="text"] {
-    padding: 3px 5px;
+.section-contato-form input[type="submit"]:hover {
+    background-color: #0000ad;
+}
+
+.section-contato-form input#email:focus, input#assunto:focus, textarea:focus {
+    border: 1px solid gray;
+    outline: 1px solid blue;
+    box-shadow: 0px 0px 7px #00000056;
+}
+
+.section-contato-form input[type="email"], .section-contato-form input[type="text"], .section-contato-form textarea {
+    padding: 8px 5px;
+    border: 1px solid #0000005d;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    width: 100%;
+    transition: 0.2s;
+    max-width: 400px;
 }
 
 
