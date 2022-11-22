@@ -34,7 +34,7 @@ function validEmail() {
         email.style.outline = '1px solid red';
         errorEmail.innerHTML = 'Email deve ter mais de 5 caracteres'
     } else if (email.value.indexOf('@') === -1) {
-        errorEmail.innerHTML = 'Coloque um email válido'
+        errorEmail.innerHTML = 'Coloque um email válido. Exemplo - (teste@gmail.com)'
     } else {
         email.style.outline = '';
         errorEmail.innerHTML = '';
@@ -62,7 +62,7 @@ form.addEventListener('change', () => {
 btnSubmit.addEventListener('click', (e) => {
     e.preventDefault();
 
-    if (validEmail() || validAssunto()) {
+    if (validEmail() && validAssunto()) {
         alert('Email enviado com succeso!');
         email.value = '';
         assunto.value = '';
