@@ -216,7 +216,7 @@ main {
 .section-contato-form::before {
     content: '';
     position: absolute;
-    background: linear-gradient(to bottom, #00007c, blue);
+    background: linear-gradient(to bottom, #3838f3, blue);
     height: 100%;
     width: 10px;
     right: 0px;
@@ -285,10 +285,6 @@ footer {
     .section-contato-form {
         width: 100%;
     }
-
-    .section-contato-form::before {
-        width: 60px;
-    }
 }
 
 
@@ -323,10 +319,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         margin: 10px;
-    }
-
-    .section-contato-form::before {
-        width: 10px;
     }
 
     .section-contato-form input[type="email"], .section-contato-form input[type="text"], .section-contato-form textarea {
